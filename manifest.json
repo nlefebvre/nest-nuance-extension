@@ -1,10 +1,13 @@
 {
-  "name": "Getting Started Example",
+  "name": "Nest Hello Accessibility",
   "version": "1.0",
-  "description": "Build an Extension!",
-  "background": {
-    "scripts": ["backkground.js"],
-    "persistent": false
-  },
+  "description": " Add text to button(s) on Nests camera page, for use with Nuance's 'Dragon NaturallySpeaking'",
+  "content_scripts": [
+    {
+      "matches": ["https://home.nest.com/camera/*"],
+      "run_at": "document_end",
+      "js": ["contentScript.js"]
+    }
+  ],
   "manifest_version": 2
 }
