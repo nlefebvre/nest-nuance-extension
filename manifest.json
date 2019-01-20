@@ -1,7 +1,7 @@
 {
   "name": "Nest Hello Accessibility",
   "version": "1.0",
-  "description": " Add text to button(s) on Nests camera page, for use with Nuance's 'Dragon NaturallySpeaking'",
+  "description": "Add text to button(s) on Nests camera page, for use with Nuance's 'Dragon NaturallySpeaking'",
   "content_scripts": [
     {
       "matches": ["https://home.nest.com/camera/*"],
